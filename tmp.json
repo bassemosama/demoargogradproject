@@ -1,0 +1,58 @@
+{
+    "apiVersion": "v1",
+    "kind": "Namespace",
+    "metadata": {
+        "creationTimestamp": "2025-10-10T17:53:11Z",
+        "deletionTimestamp": "2025-11-07T17:17:49Z",
+        "labels": {
+            "kubernetes.io/metadata.name": "mysql-operator",
+            "name": "mysql-operator"
+        },
+        "name": "mysql-operator",
+        "resourceVersion": "106402",
+        "uid": "e7bead40-a95d-4b36-8997-ee4a90680104"
+    },
+    "spec": {
+       
+    },
+    "status": {
+        "conditions": [
+            {
+                "lastTransitionTime": "2025-11-07T17:17:54Z",
+                "message": "All resources successfully discovered",
+                "reason": "ResourcesDiscovered",
+                "status": "False",
+                "type": "NamespaceDeletionDiscoveryFailure"
+            },
+            {
+                "lastTransitionTime": "2025-11-07T17:17:54Z",
+                "message": "All legacy kube types successfully parsed",
+                "reason": "ParsedGroupVersions",
+                "status": "False",
+                "type": "NamespaceDeletionGroupVersionParsingFailure"
+            },
+            {
+                "lastTransitionTime": "2025-11-07T17:17:54Z",
+                "message": "All content successfully deleted, may be waiting on finalization",
+                "reason": "ContentDeleted",
+                "status": "False",
+                "type": "NamespaceDeletionContentFailure"
+            },
+            {
+                "lastTransitionTime": "2025-11-07T17:17:54Z",
+                "message": "All content successfully removed",
+                "reason": "ContentRemoved",
+                "status": "False",
+                "type": "NamespaceContentRemaining"
+            },
+            {
+                "lastTransitionTime": "2025-11-07T17:17:54Z",
+                "message": "All content-preserving finalizers finished",
+                "reason": "ContentHasNoFinalizers",
+                "status": "False",
+                "type": "NamespaceFinalizersRemaining"
+            }
+        ],
+        "phase": "Terminating"
+    }
+}
