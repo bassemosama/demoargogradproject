@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - bassemosama12/mywebapp:v1.3
